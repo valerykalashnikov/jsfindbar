@@ -1,15 +1,18 @@
-searchonthepage
-===============
+#Searchonthepage
 
-javascript search on the page
+Search within a webpage using JavaScript
 
-How to use
+##How to use
 
-in onload or DOMContentLoaded function 
-var seach = new Searh('content_id', 'counter_id');
-//content_id - id of the component of the page where to search
-//counter_id - counter of coincidene (optional parameter)
-search.init();
+~~~javascript
+function init() {
+  var seach = new Searh('content_id', 'counter_id');
+  //content_id - id of the component of the page where to search
+  //counter_id - counter of coincidene (optional parameter)
+  search.init();
+};
+window.addEventListener('DOMContentLoaded', init, false);
+~~~
 
-Don't supported IE now. 
-Don't supported script tag in content
+Don't support IE below 10. 
+Don't support script tag in content
